@@ -145,7 +145,7 @@ begin
     randomNumber := Command.GetRandomInteger(0,101);
     temporary := countIf(randomNumber) + 1;
     devAction := codes[temporary - 1];
-    Command.SendToLog(IntToStr(devAction));
+
     if devAction <> 1000 then
     begin
     Command.SendDevNotifyStatusToServer (inputEvt,
@@ -164,7 +164,7 @@ end;
 procedure FinalizeScript;
 begin
   //Implement any required finalization code here that should be executed when the script stops running.
-  //Example: clean memory, free objects, etc.
+  //Example: clean memory, free objects, etc.                      
 end;
 
 
